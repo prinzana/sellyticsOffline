@@ -15,7 +15,7 @@ export default function ToolGrid({
 
   const filteredTools = tools.filter(tool => {
     const matchesSearch = tool.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          tool.desc.toLowerCase().includes(searchQuery.toLowerCase());
+      tool.desc.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || tool.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
@@ -45,9 +45,8 @@ export default function ToolGrid({
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap ${
-                selectedCategory === cat ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg' : 'bg-white dark:bg-slate-900 border'
-              }`}
+              className={`px-5 py-2.5 rounded-xl font-semibold whitespace-nowrap ${selectedCategory === cat ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg' : 'bg-white dark:bg-slate-900 border'
+                }`}
             >
               {cat}
             </button>
@@ -62,7 +61,7 @@ export default function ToolGrid({
           <h3 className="text-xl font-semibold">No tools found</h3>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
           {filteredTools.map(tool => {
             const isAccessible = (tool.isFreemium || isPremium) && allowedFeatures.includes(tool.key);
             const Icon = tool.icon;
@@ -71,9 +70,8 @@ export default function ToolGrid({
               <div
                 key={tool.key}
                 onClick={() => isAccessible && onToolSelect(tool.key)}
-                className={`relative bg-white dark:bg-slate-900 rounded-2xl p-6 border transition-all ${
-                  isAccessible ? 'cursor-pointer hover:shadow-xl hover:-translate-y-1' : 'opacity-50 cursor-not-allowed'
-                }`}
+                className={`relative bg-white dark:bg-slate-900 rounded-2xl p-6 border transition-all ${isAccessible ? 'cursor-pointer hover:shadow-xl hover:-translate-y-1' : 'opacity-50 cursor-not-allowed'
+                  }`}
               >
                 {!tool.isFreemium && (
                   <div className="absolute top-3 right-3 bg-amber-100 text-amber-700 px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">

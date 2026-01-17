@@ -25,7 +25,7 @@ export const tools = [
   {
     key: 'sales',
     label: 'Sales Tracker',
-    icon: <FaChartLine className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaChartLine className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Add and track your daily sales to monitor business performance.',
     component: <Sales />,
     isFreemium: true,
@@ -33,7 +33,7 @@ export const tools = [
   {
     key: 'products',
     label: 'Products & Pricing Tracker',
-    icon: <FaBoxes className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaBoxes className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Manage your store products, prices, and stock levels.',
     component: <ProductCatalogue />,
     isFreemium: true,
@@ -41,7 +41,7 @@ export const tools = [
   {
     key: 'stock_transfer',
     label: 'Stock Transfer',
-    icon: <FaFileInvoice className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaFileInvoice className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Transfer stock between stores easily.',
     component: <StockTransfer />,
     isFreemium: true,
@@ -49,7 +49,7 @@ export const tools = [
   {
     key: 'inventory',
     label: 'Manage Inventory',
-    icon: <FaTasks className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaTasks className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Track goods sold and stock remaining in your store.',
     component: <Inventory />,
     isFreemium: true,
@@ -57,7 +57,7 @@ export const tools = [
   {
     key: 'receipts',
     label: 'Sales Receipts',
-    icon: <FaReceipt className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaReceipt className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'View and manage the latest sales receipts from your store.',
     component: <ReceiptManager />,
     isFreemium: true,
@@ -65,7 +65,7 @@ export const tools = [
   {
     key: 'returns',
     label: 'Returned Items Tracker',
-    icon: <FaUndo className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaUndo className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Track and manage items returned by customers.',
     component: <Returns />,
     isFreemium: false,
@@ -73,7 +73,7 @@ export const tools = [
   {
     key: 'expenses',
     label: 'Expenses Tracker',
-    icon: <FaRegMoneyBillAlt className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaRegMoneyBillAlt className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Record and monitor all store expenses.',
     component: <ExpenseManager />,
     isFreemium: false,
@@ -81,15 +81,15 @@ export const tools = [
   {
     key: 'unpaid supplies',
     label: 'Unpaid Supplies',
-    icon: <FaBoxOpen className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
-    desc: 'Track goods taken on credit that haven’t been paid for yet.',
+    icon: <FaBoxOpen className="text-lg text-indigo-600 dark:text-indigo-400" />,
+    desc: "Track goods taken on credit that haven't been paid for yet.",
     component: <UnpaidManager />,
     isFreemium: false,
   },
   {
     key: 'debts',
     label: 'Debtors',
-    icon: <FaFileInvoiceDollar className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaFileInvoiceDollar className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Monitor customers who owe you money.',
     component: <DebtForm />,
     isFreemium: false,
@@ -97,7 +97,7 @@ export const tools = [
   {
     key: 'sales_summary',
     label: 'Sales Summary',
-    icon: <FaChartLine className="text-2xl sm:text-5xl text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaChartLine className="text-lg text-indigo-600 dark:text-indigo-400" />,
     desc: 'Get a detailed overview of your sales performance.',
     component: <SalesSummary />,
     isFreemium: true,
